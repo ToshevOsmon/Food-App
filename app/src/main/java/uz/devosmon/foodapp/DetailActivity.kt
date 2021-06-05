@@ -33,9 +33,9 @@ class DetailActivity : BaseActivity() {
             finish()
         }
         btnYouTube.setOnClickListener {
-var uri:Uri = Uri.parse(youtubeLink)
+            var uri: Uri = Uri.parse(youtubeLink)
 
-            startActivity(Intent(Intent.ACTION_VIEW,uri))
+            startActivity(Intent(Intent.ACTION_VIEW, uri))
 
         }
     }
@@ -62,6 +62,7 @@ var uri:Uri = Uri.parse(youtubeLink)
 
 
                 if (response.body()!!.mealsEntity[0].strYoutube != null) {
+
                     youtubeLink = response.body()!!.mealsEntity[0].strYoutube
                 } else {
                     btnYouTube.visibility = View.GONE
