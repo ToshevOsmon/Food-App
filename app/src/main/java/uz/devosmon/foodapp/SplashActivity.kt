@@ -28,6 +28,9 @@ import uz.devosmon.foodapp.retrofit.GetDataService
 import uz.devosmon.foodapp.retrofit.RetrofitClient
 import java.util.jar.Manifest
 
+
+//Food App create by Toshev Osmon
+
 class SplashActivity : BaseActivity(), EasyPermissions.RationaleCallbacks,
     EasyPermissions.PermissionCallbacks {
 
